@@ -53,6 +53,15 @@ class SendyPHP
     {
         $type = 'subscribe';
 
+        //Global options
+        $global_options = array(
+            'api_key' => $this->api_key,
+            'list_id' => $this->list_id
+        );
+
+        //Merge the passed in values with the global options
+        $values = array_merge($global_options, $values);
+
         //Send the subscribe
         $result = strval($this->buildAndSend($type, $values));
 
@@ -86,7 +95,11 @@ class SendyPHP
         $type = 'unsubscribe';
 
         //Send the unsubscribe
-        $result = strval($this->buildAndSend($type, array('email' => $email)));
+        $result = strval($this->buildAndSend($type, array(
+            'email' => $email,
+            'api_key' => $this->api_key,
+            'list_id' => $this->list_id
+        )));
 
         //Handle results
         switch ($result) {
