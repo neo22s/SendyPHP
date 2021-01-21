@@ -1,10 +1,9 @@
 SendyPHP
 =================
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/jacobbennett/sendyphp.svg?style=flat-square)](https://packagist.org/packages/jacobbennett/sendyphp)
-[![Total Downloads](https://img.shields.io/packagist/dt/jacobbennett/sendyphp.svg?style=flat-square)](https://packagist.org/packages/jacobbennett/sendyphp)
+Updated 2021 new Sendy API.
 
-A PHP class built to interface with the Sendy API ([http://sendy.co](http://sendy.co))
+A PHP class built to interface with the Sendy API ([http://sendy.co](http://sendy.co)) forked and updated from https://github.com/JacobBennett/SendyPHP
 
 ## Installation
 
@@ -13,7 +12,7 @@ A PHP class built to interface with the Sendy API ([http://sendy.co](http://send
 Begin by installing this package through Composer. Edit your project's `composer.json` file to require `jacobbennett/sendyphp`.
 
 	"require": {
-		"jacobbennett/sendyphp": "1.3.*"
+		"neo22s/sendyphp": "1.3.*"
 	}
 
 Next, update Composer from the Terminal:
